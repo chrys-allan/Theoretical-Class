@@ -3,10 +3,10 @@
 
 from Animal import Animal
 
-
 class Mammal(Animal):
-    def __init__(self):
-        self.fur = None
+    def __init__(self, age, height, weight, position,fur):
+        Animal.__init__(self, age, height, weight, position):
+        self.fur = fur
 
-    def fur_type(self, ):
+    def fur_type(self):
         pass
